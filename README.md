@@ -80,7 +80,7 @@ You can find the Kaizntree API Documentation [here](https://documenter.getpostma
 ## Running Unit Tests for API endpoints
 
 Navigate back to the Django project root directory and run unit tests for the API endpoints using the following command:
-   
-      ```
-      python manage.py test
-      ```
+
+```
+python manage.py test
+```
