@@ -47,7 +47,7 @@ const ItemDashboard = () => {
       });
   
       try {
-        const itemsResponse = await axios.get(`http://localhost:8000/api/items/?${params.toString()}`, {
+        const itemsResponse = await axios.get(`http://127.0.0.1:8000/api/items/?${params.toString()}`, {
             headers: {
               Authorization: `Bearer ${localStorage.getItem('token')}`,
             },
@@ -55,7 +55,7 @@ const ItemDashboard = () => {
         setItems(itemsResponse.data);
   
         if(!categories.length){
-          const categoriesResponse = await axios.get('http://localhost:8000/api/categories/', {
+          const categoriesResponse = await axios.get('http://127.0.0.1:8000/api/categories/', {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
               },
@@ -64,7 +64,7 @@ const ItemDashboard = () => {
         }
   
         if(!tags.length){
-          const tagsResponse = await axios.get('http://localhost:8000/api/tags/', {
+          const tagsResponse = await axios.get('http://127.0.0.1:8000/api/tags/', {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem('token')}`,
               },
@@ -91,7 +91,7 @@ const ItemDashboard = () => {
   const handleNewCategorySubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/categories/', { name: newCategoryName }, {
+      const response = await axios.post('http://127.0.0.1:8000/api/categories/', { name: newCategoryName }, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
@@ -154,7 +154,7 @@ const ItemDashboard = () => {
   const handleNewItemSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/api/items/', sendNewItem, {
+      const response = await axios.post('http://127.0.0.1:8000/api/items/', sendNewItem, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`,
         },
