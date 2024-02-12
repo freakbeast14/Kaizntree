@@ -61,12 +61,26 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. **Start the Django backend server**
    Navigate back to the Django project root directory and run:
+   
       ```
       python manage.py runserver
       ```
-2. **Start the React frontend**
+3. **Start the React frontend**
    In a new terminal, navigate to the React app directory and start the React development server:
+   
       ```
       npm start
       ```
    This should launch your default web browser and navigate to http://localhost:3000, where you can interact with the application.
+
+## API Documentation
+
+You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
+
+## Running Unit Tests for API endpoints
+
+Navigate back to the Django project root directory and run unit tests for the API endpoints using the following command:
+
+```
+python manage.py test
+```
