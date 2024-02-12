@@ -75,7 +75,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## API Documentation
 
-You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3ZktW).
+You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
 
 ## Running Unit Tests for API endpoints
 
