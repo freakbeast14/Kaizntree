@@ -1,0 +1,30 @@
+# Django
+*.pyc
+__pycache__/
+db.sqlite3
+/static
+/media
+.env
+
+# React
+kaizntree_frontend/node_modules/
+kaizntree_frontend/build/
+kaizntree_frontend/.env
+kaizntree_frontend/.pnp
+kaizntree_frontend/.pnp.js
+kaizntree_frontend/coverage
+kaizntree_frontend/.env*
+kaizntree_frontend/npm-debug.log*
+kaizntree_frontend/yarn-debug.log*
+kaizntree_frontend/yarn-error.log*
+kaizntree_frontend/package-lock.json
+
+# General
+.DS_Store
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.seed
+*.db
