@@ -8,20 +8,23 @@ import kaizntreeLogo from '../assets/kaizntreeLogo.png';
 
 const Login = () => {
   const [credentials, setCredentials] = useState({ username: '', password: '' });
+  const [showLoginFailed, setShowLoginFailed] = useState(false);
   const navigate = useNavigate();
 
   const handleInputChange = (e) => {
+    setShowLoginFailed(false);
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/login/', credentials);
+      const response = await axios.post('https://shahil14.pythonanywhere.com/api/login/', credentials);
       localStorage.setItem('token', response.data.access);
       navigate('/item-dashboard');
     } catch (error) {
       console.error('Login failed:', error.response);
+      setShowLoginFailed(true);
     }
   };
 
@@ -36,6 +39,7 @@ const Login = () => {
           <img src={kaizntreeLogo} alt="Kaizntree" />
         </div>
         <form onSubmit={handleLogin} className="login-form">
+          { showLoginFailed ? <label className="login-fail">Invalid Credentials!</label> : null}
           <div className="input-group">
             <FontAwesomeIcon icon={faUser} />
             <input

@@ -73,6 +73,11 @@
   background-color: #000;
 }
 
+.login-fail {
+  color: red;
+  text-align: center;
+}
+
 /* Adjustments may be needed to match the exact image styling */
 
   

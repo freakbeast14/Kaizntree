@@ -17,7 +17,7 @@ const CreateAccount = () => {
     e.preventDefault();
     try {
       // Replace with your actual create account API endpoint
-      await axios.post('http://127.0.0.1:8000/api/register/', accountDetails);
+      await axios.post('https://shahil14.pythonanywhere.com/api/register/', accountDetails);
       navigate('/login'); // Redirect to login after account creation
     } catch (error) {
       console.error('Account creation failed:', error.response);
