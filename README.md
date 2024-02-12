@@ -70,3 +70,7 @@ These instructions will get you a copy of the project up and running on your loc
       npm start
       ```
    This should launch your default web browser and navigate to http://localhost:3000, where you can interact with the application.
+
+### API Documentation
+
+You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3ZktW).
