@@ -1,6 +1,6 @@
 # Kaizntree
 
-Kaizntree is an intuitive and secure inventory management platform that streamlines item tracking and management for businesses. It provides a user-friendly dashboard for monitoring SKU, product names, categories, tags, stock status, and available stock levels, enhanced with advanced filtering options for precise data retrieval. The application ensures data integrity through robust authentication, offers real-time inventory insights, and optimizes performance with caching techniques. Designed for modern enterprises, Kaizntree simplifies inventory processes, making it an essential tool for efficient and effective inventory oversight.
+Kaizntree is an intuitive and secure inventory management platform that streamlines item tracking and management for businesses. It provides a user-friendly dashboard for monitoring SKU, product names, categories, tags, stock status, and available stock levels, enhanced with advanced filtering options for precise data retrieval. The application ensures data integrity through robust authentication, and offers real-time inventory insights.
 
 ## Live Application
 
