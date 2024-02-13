@@ -32,14 +32,7 @@ class ItemViewSet(viewsets.ModelViewSet):
     serializer_class = ItemSerializer
 
     def get_queryset(self):
-        # queryset = self.queryset
-        # search = self.request.query_params.get('search', None)
-
-        # if search:
-        #     queryset = queryset.filter(name__icontains=search)
-
-        # return queryset
-        queryset = self.queryset
+        queryset = Item.objects.all()
         search = self.request.query_params.get('search', None)
         category = self.request.query_params.get('category', None)
         stock_status = self.request.query_params.get('stock_status', None)
