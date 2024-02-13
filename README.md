@@ -14,12 +14,32 @@ To get a feel for the application, you can log in using the following demo crede
 - **Password:** `user1`
 
 Alternatively, feel free to sign up for a new account and explore the dashboard with your own unique login.
-
+ 
 ## Technology Stack
 
-- **Frontend:** The frontend interface is built with the React framework, leveraging modern JavaScript features for a responsive and dynamic user experience. It's hosted on [Netifly](https://www.netlify.com/), benefiting from its global CDN and high performance.
+### Frontend
 
-- **Backend:** The backend is crafted using the Django framework, known for its robustness and scalability in Python. It is hosted on [PythonAnywhere](https://www.pythonanywhere.com/), which offers a hassle-free hosting service, specifically catered to Python applications.
+- **React:** The frontend interface is built with the React framework, utilizing modern JavaScript features for a responsive and dynamic user experience. It's hosted on [Netifly](https://www.netlify.com/), which offers a global CDN and high performance, ensuring quick load times and a smooth experience for users worldwide.
+
+### Backend
+
+- **Django:** Our backend is powered by the Django framework, acclaimed for its robustness and ability to scale with Python. With Django, we have a structured, secure, and powerful backend system. Hosting on [PythonAnywhere](https://www.pythonanywhere.com/) provides a hassle-free deployment and hosting service, making it a perfect fit for Python-based web applications.
+
+### Database
+
+- **SQLite3:** As the default database for Django, SQLite3 is used for its simplicity and efficiency in development and testing phases. It requires zero configuration and is an excellent choice for applications that do not demand the scalability provided by larger database systems like PostgreSQL or MySQL. For production, it's recommended to switch to a more robust database system to handle a higher volume of data transactions and provide advanced features such as concurrency control and full-text search.
+
+## How it works?
+
+```mermaid
+flowchart LR
+    CLIENT[CLIENT BROWSER] -->|User Interactions| FRONTEND
+    BACKEND[BACKEND: Hosted on PythonAnywhere] -->|Fetch & Process Data| API[KAIZENTREE API]
+    FRONTEND[FRONTEND: Hosted on Netlify] -->|API Calls| API
+    API -->|Response| FRONTEND
+    FRONTEND -->|Display Data| CLIENT
+    API --> |Sends Request| BACKEND
+```
 
 ## API Documentation
 
