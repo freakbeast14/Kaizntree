@@ -133,14 +133,12 @@ const ItemDashboard = () => {
 
   const handleCategoryChange = (e) => {
     setNewItem({ ...newItem, category: e.target.value });
-    console.log(e.target);
     setSendNewItem({ ...sendNewItem, category: parseInt(e.target.value) });
   };
 
   const handleTagChange = (e) => {
     const selectedTags = Array.from(e.target.selectedOptions, option => option.value);
     setNewItem({ ...newItem, tags: selectedTags });
-    console.log(e.target.selectedOptions);
     const selectedTagsIds = Array.from(e.target.selectedOptions, option => parseInt(option.value));
     setSendNewItem({ ...sendNewItem, tags: selectedTagsIds });
   };
