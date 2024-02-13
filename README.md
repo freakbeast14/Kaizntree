@@ -2,6 +2,16 @@
 
 Kaizntree is an intuitive and secure inventory management platform that streamlines item tracking and management for businesses. It provides a user-friendly dashboard for monitoring SKU, product names, categories, tags, stock status, and available stock levels, enhanced with advanced filtering options for precise data retrieval. The application ensures data integrity through robust authentication, offers real-time inventory insights, and optimizes performance with caching techniques. Designed for modern enterprises, Kaizntree simplifies inventory processes, making it an essential tool for efficient and effective inventory oversight.
 
+## LIVE PROJECT
+
+The frontend is developed using React framework in JavaScript and hosted on [Netifly](https://www.netlify.com/) and the backend is developed using Django framework in Python and hosted on [PythonAnywhere](https://www.pythonanywhere.com/).
+
+You can find the live project [here](https://kaizntree.netlify.app/).
+
+## API Documentation
+
+You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -72,10 +82,6 @@ These instructions will get you a copy of the project up and running on your loc
       npm start
       ```
    This should launch your default web browser and navigate to http://localhost:3000, where you can interact with the application.
-
-## API Documentation
-
-You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
 
 ## Running Unit Tests for API endpoints
 
