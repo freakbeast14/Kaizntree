@@ -4,7 +4,16 @@ Kaizntree is an intuitive and secure inventory management platform that streamli
 
 ## Live Application
 
-Experience the live application [here](#).
+Experience the live application [here](https://kaizntree.netlify.app/).
+
+### Demo Credentials
+
+To get a feel for the application, you can log in using the following demo credentials:
+
+- **Username:** `user1`
+- **Password:** `user1`
+
+Alternatively, feel free to sign up for a new account and explore the dashboard with your own unique login.
 
 ## Technology Stack
 
@@ -57,6 +66,7 @@ These instructions will get you a copy of the project up and running on your loc
       pip install -r requirements.txt
       ```
 4. **Set up environment variables**
+
    Create a _.env_ file in the root of the Django project and add the following:
 
       ```
@@ -64,7 +74,8 @@ These instructions will get you a copy of the project up and running on your loc
       DEBUG=True # Set to False in production
       ```
    Make sure to replace _your_django_secret_key_ with your actual Django secret key.
-5. **Install frontend dependencies**
+6. **Install frontend dependencies**
+
    Navigate to the React app directory (assuming it's named frontend):
       ```
       cd kaizntree_frontend
@@ -74,12 +85,20 @@ These instructions will get you a copy of the project up and running on your loc
 ## Running the Application
 
 1. **Start the Django backend server**
+
    Navigate back to the Django project root directory and run:
    
       ```
       python manage.py runserver
       ```
-3. **Start the React frontend**
+  If you are facing any issues with migration, run the following commands before running the server:
+  
+      ```
+      python manage.py makemigrations
+      python manage.py migrate
+      ```
+2. **Start the React frontend**
+
    In a new terminal, navigate to the React app directory and start the React development server:
    
       ```
