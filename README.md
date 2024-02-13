@@ -47,7 +47,8 @@ flowchart LR
 
 ## API Documentation
 
-API Documentation done using Postman. You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
+- Access the Kaizntree API [here](https://shahil14.pythonanywhere.com/api/).
+- API Documentation done using Postman. You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
 
 ## Getting Started
 
