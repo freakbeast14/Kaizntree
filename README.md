@@ -43,7 +43,7 @@ flowchart LR
 
 ## API Documentation
 
-You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
+API Documentation done using Postman. You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
 
 ## Getting Started
 
