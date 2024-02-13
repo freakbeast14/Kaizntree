@@ -14,6 +14,10 @@ To get a feel for the application, you can log in using the following demo crede
 - **Password:** `user1`
 
 Alternatively, feel free to sign up for a new account and explore the dashboard with your own unique login.
+
+### Video demonstartion of the application
+
+To understand the process behind the making of the application, I have made a video demonstartion of the application. To watch it, click [here](https://drive.google.com/file/d/1bfiZnifrCjkvJEv7RHFVFYcLAqQ5M9Wq/view?usp=sharing).
  
 ## Technology Stack
 
