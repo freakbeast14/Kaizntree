@@ -43,7 +43,7 @@ flowchart LR
 
 ## API Documentation
 
-You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
+API Documentation done using Postman. You can find the Kaizntree API Documentation [here](https://documenter.getpostman.com/view/16414670/2sA2r3b6WY).
 
 ## Getting Started
 
@@ -112,11 +112,11 @@ These instructions will get you a copy of the project up and running on your loc
       python manage.py runserver
       ```
   If you are facing any issues with migration, run the following commands before running the server:
-  
-      ```
-      python manage.py makemigrations
-      python manage.py migrate
-      ```
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 2. **Start the React frontend**
 
    In a new terminal, navigate to the React app directory and start the React development server:
